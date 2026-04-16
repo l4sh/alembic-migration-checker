@@ -467,9 +467,8 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         ),
     )
     parser.add_argument(
-        "--migrations-dir",
+        "migrations_dir",
         type=Path,
-        required=True,
         help="Path to the Alembic versions directory",
     )
     parser.add_argument(

@@ -1,0 +1,7 @@
+- id: check-alembic-migrations
+  name: Check Alembic migrations
+  description: Validate Alembic migration dependency graph for issues that would break `alembic upgrade head`.
+  entry: check_migrations.py
+  language: script
+  pass_filenames: false
+  always_run: true
